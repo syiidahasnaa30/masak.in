@@ -1,0 +1,140 @@
+@import url("https://fonts.googleapis.com/css2?family=Poppins:wght@100;200;300;400;500;600;700&display=swap");
+body {
+  font-family: "Poppins", sans-serif;
+  margin: 0px 0px 0px 0px;
+  padding: 0px 0px 0px 0px;
+}
+
+.navbar {
+  background-color: #ffffff;
+  padding: 10px 10px 10px 10px;
+  filter: drop-shadow(0px 4px 4px rgba(0, 0, 0, 0.25));
+}
+.nav-brand {
+  font-weight: 500;
+  font-size: 40px;
+  margin-left: 50px;
+}
+flyer-element {
+  padding: 60px;
+  background-color: #ffe8d666;
+  display: flex;
+}
+flyer-element > flyer-left > span {
+  font-weight: 400;
+  font-size: 40px;
+}
+flyer-element > flyer-left > p {
+  font-weight: 200;
+  font-size: 20px;
+}
+flyer-element > flyer-left {
+  margin-top: 70px;
+  flex-grow: 75%;
+  margin-right: 50px;
+}
+flyer-element > flyer-right {
+  flex-grow: 25%;
+  margin-left: 50px;
+}
+flyer-right > img {
+  border-radius: 100px;
+  filter: drop-shadow(0px 4px 4px rgba(0, 0, 0, 0.25));
+}
+
+.subtitle {
+  font-weight: 500;
+  font-size: 40px;
+  text-align: center;
+  margin-top: 50px;
+}
+h5 {
+  font-weight: 600;
+  margin-bottom: 20px;
+  font-size: 20;
+}
+search-container {
+  padding: 50px;
+  margin-top: 20px;
+  display: flex;
+}
+
+search-container > input {
+  width: 80%;
+  padding: 10px;
+  border: 1px solid #ff971d;
+  border-radius: 10px;
+  font-weight: 400;
+  margin-right: 10px;
+}
+
+search-container > button {
+  width: 18%;
+  cursor: pointer;
+  padding: 10px;
+  background-color: #ff971d;
+  color: white;
+  border: 0;
+  font-weight: 500;
+  font-size: 18px;
+  border-radius: 10px;
+}
+recipe-list {
+  width: 95%;
+}
+
+.menu-item {
+  margin: 10px;
+  background: #ffffff;
+  box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+  border-radius: 20px;
+}
+.menu-item > img {
+  width: 100%;
+  height: 200px;
+}
+.card-body > p {
+  font-weight: 300;
+  font-size: 18;
+}
+
+footer {
+  background: #ff971d;
+  padding-top: 20px;
+  padding-bottom: 20px;
+  font-weight: 100px;
+  font-size: 20px;
+  text-align: center;
+  color: white;
+  margin-bottom: 0 !important;
+}
+@media screen and (max-width: 1000px) {
+  flyer-element {
+    display: flex;
+    flex-direction: column;
+    margin-left: auto;
+    margin-right: auto;
+    background-color: #ffe8d666;
+  }
+
+  flyer-left,
+  flyer-right {
+    flex-grow: 100%;
+  }
+  flyer-right > img {
+    width: 100%;
+  }
+}
+@media screen and (max-width: 750px) {
+  search-container {
+    display: flex;
+    flex-direction: column;
+  }
+  search-container > input {
+    width: 100%;
+  }
+  search-container > button {
+    width: 100%;
+    margin-top: 10px;
+  }
+}
